@@ -45,3 +45,7 @@ This package allow you to installing with few steps.
 		cd binding-cpp/agent/build
 		./random_agent
 		```
+
+		You should see like following picture.
+
+		![CartPole-v0](CartPole.png)
