@@ -47,3 +47,54 @@ This package allow you to installing with few steps.
 		You should see like following picture.
 
 		![CartPole-v0](CartPole.png)
+
+
+### Explanation of library
+
+- `Gym::Client`
+	This class represents client
+	
+	- `Gym::Environment make( const std::string &name)`
+	
+	  This member function creates environment.
+	
+	  - `std::string& name` : environment name (e.g. "CartPole-v0").
+	  - `Gym::Environment` : This *returned* class represents environment.
+	
+- `Gym::Environment`
+
+  This class represents environment.
+
+  - `Gym::Space action_space()`
+
+    Return action space.
+
+    - `Gym::Space` : This *returned* class represents action space.
+
+  - `Gym::Space observation_space()`
+
+    Return observation space.
+
+    - `Gym::Space` : This class represents observation space.
+
+  - `void reset( Gym::State *save_initial_state_here)`
+
+    Reseting the state and initial state can be observed as argument.
+
+    - `Gym::State* save_initial_state_here`
+
+      save_initial_state_here variable will get initial state.
+
+      ```c++
+      Gym::State s;
+      env->reset(&s);e
+      ```
+
+- `Gym::State`
+
+  This class represents **state** of environment.
+
+  - `bool done`
+  - `std::string info`
+  - `std::vector<float> observation`
+  - `float reward`
