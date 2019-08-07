@@ -8,9 +8,7 @@ This package allow you to installing with few steps.
 
 ### Installation
 
-1. harumo11/binding-cppをダウンロード
 1. Download harumo11/binding-cpp
-2. openai/gym-http-api/binding-cppをダウンロードしたファイルで置き換え
 2. Replace openai/gym-http-api/binding-cpp directory with harumo11/binding-cpp directory.
 3. Build a library controlling OpenAI-Gym from C++.
 	```sh
