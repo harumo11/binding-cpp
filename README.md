@@ -14,21 +14,21 @@ This package allow you to installing with few steps.
 2. Replace openai/gym-http-api/binding-cpp directory with harumo11/binding-cpp directory.
 3. Build a library controlling OpenAI-Gym from C++.
 	```sh
-		cd binding-cpp/lib
-		mkdir build
-		cd build
-		cmake ..
-		make 
-		sudo make install
+	cd binding-cpp/lib
+	mkdir build
+	cd build
+	cmake ..
+	make 
+	sudo make install
 	```
 
 4. Building a program which uses built library.
 	
 	```sh
-      cd ../agent
-      mkdir build
-      cd build
-      make 
+    cd ../agent
+    mkdir build
+    cd build
+    make 
 	```
 	
 5. Checking whether built program can control OpenAI-Gym
